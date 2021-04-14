@@ -8,6 +8,8 @@ authors = ["Jonathan Cutrer <joncutrer@gmail.com>"]
 python = "^3.8"
 streamlit = "^0.80.0"
 beautifulsoup4 = "^4.9.3"
+python-box = "^5.3.0"
+PyYAML = "^5.4.1"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^20.8b1", allow-prereleases = true}

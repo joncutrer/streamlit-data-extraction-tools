@@ -1,0 +1,7 @@
+app:
+  name: "JC's Data Extraction Tools"
+  tagline: "Created with Streamlit by JC"
+
+ui:
+  layout: "wide"
+  textarea_height: 270
