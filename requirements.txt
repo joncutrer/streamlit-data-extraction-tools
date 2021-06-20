@@ -1,5 +1,0 @@
-pandas
-streamlit
-beautifulsoup4
-python-box
-PyYAML
