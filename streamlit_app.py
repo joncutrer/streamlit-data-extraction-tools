@@ -23,7 +23,7 @@ st.sidebar.title(cfg.app.name)
 st.sidebar.write(cfg.app.tagline)
 
 st.sidebar.markdown(
-    '<a target="_blank" href="https://jcutrer.com">jcutrer.com</a> | <a target="_blank" href="https://github.com/joncutrer">github</a> | <a target="_blank" href="https://www.buymeacoffee.com/jcutrer">donate</a>',
+    '<a target="_blank" href="https://jcutrer.com">jcutrer.com</a> | <a target="_blank" href="https://github.com/joncutrer/streamlit-data-extraction-tools">github</a> | <a target="_blank" href="https://www.buymeacoffee.com/jcutrer">donate</a>',
     unsafe_allow_html=True,
 )
 
