@@ -2,6 +2,7 @@ import copy
 from logging import PlaceHolder
 import random
 from typing import Dict, List, Literal
+import html
 
 import pandas as pd
 import streamlit as st
@@ -94,6 +95,13 @@ module = st.sidebar.selectbox(
     get_module_texts(module_list_dict),
     index=selected_module_id,
 )
+
+########################
+########################
+if module[:2] == "se":
+    st.title(cfg.app.name)
+    st.subheader("To get started choose a module from the left sidebar")
+    st.write("Note: On small screens the left sidebar is collapsed by default.")
 
 ########################
 ########################
@@ -729,6 +737,7 @@ elif module == "CHANGELOG":
 
     st.markdown(
         """
+* 2021-06-24 Added some intro text and improved navigation
 * 2021-06-20 Added Module 20 <a> link extractor
 * 2021-06-19 Added Module 10 html table to csv
 * 2021-04-13 Added Modules 01 & 02 html select extractor
@@ -762,3 +771,21 @@ page_footer = f"""
 """
 
 st.write(page_footer, unsafe_allow_html=True)
+
+
+page_links = "<center>"
+
+for idx, item in enumerate(module_list_dict):
+    if idx == 0:
+        continue
+
+    # st.write(item)
+
+    page_links += (
+        f'<a href="?m={html.escape(item.get("slug"))}">{html.escape(item.get("text"))}</a>'
+    )
+    page_links += " | "
+
+page_links += "</center>"
+
+st.write(page_links, unsafe_allow_html=True)
