@@ -8,8 +8,6 @@ This web application is powered by python and streamlit.
 
 The tool brings together several html data extraction tools such as…
 
-HTML <select> To list
-
-HTML <table> to CSV
-
-HTML <a href=“”> link extractor
+* HTML <select> To list
+* HTML <table> to CSV
+* HTML <a href=“”> link extractor
